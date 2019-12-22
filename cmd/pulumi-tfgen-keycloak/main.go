@@ -17,11 +17,11 @@ package main
 import (
 	"github.com/pulumi/pulumi-terraform-bridge/pkg/tfgen"
 
-	xyz "github.com/pulumi/pulumi-xyz"
-	"github.com/pulumi/pulumi-xyz/pkg/version"
+	keycloak "github.com/pulumi/pulumi-keycloak"
+	"github.com/pulumi/pulumi-keycloak/pkg/version"
 )
 
 func main() {
 	// Modify the path to point to the new provider
-	tfgen.Main("xyz", version.Version, xyz.Provider())
+	tfgen.Main("keycloak", version.Version, keycloak.Provider())
 }
